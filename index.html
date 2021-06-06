@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eviganes</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="fonts/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="center">
+            <img src="img/ganes.png" height="150px" width="150px" alt="">
+        </div> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="caret icon-home"></span>Inicio</a></li>
+                <li class="submenu">
+                    <a href="#"><span class="caret icon-circle-down"></span>Categorías</a>
+                    <ul class="submenu2">
+                        <li><a href="html/cumpleaños.html">Cumpleaños</a></li>
+                        <li><a href="html/bodas.html">Bodas</a></li>
+                        <li><a href="html/aniversarios.html">Aniversarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/nosotros.html"><span class="caret icon-user"></span>Nosotros</a></li>
+                <li><a href="html/contactos.html"><span class="caret icon-phone"></span>Contactános</a></li>
+                <li class="submenu" id="submenu1">
+                    <a href="html/carrito.html"><span class="caret icon-cart"></span>A carrito</a>
+                </li>
+                <li class="submenu" id="submenu1">
+                    <a href="#"><span class="caret icon-cart"></span></a>
+                    <div id="carrito" class="contenedor-carrito">
+                        <table id="listacarrito">
+                            <thead>
+                                <tr>
+                                    <th class="tableth">Imagen</th>
+                                    <th class="tableth">Artículo</th>
+                                    <th class="tableth">Cantidad</th>
+                                    <th class="tableth">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                
+                        <div class="center">
+                            <a href="#" id="vaciarcarrito">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>       
+    </header>
+
+    <main>
+        <div class="center">
+            <div class="slider">
+                <ul>
+                    <li><img src="img/MANIVERSARIOS.JPG" alt=""></li>
+                    <li><img src="img/PELUCHES.jpg" alt=""></li>
+                    <li><img src="img/MBODAS.JPG" alt=""></li>
+                    <li><img src="img/MCHOCOLATES.JPG" alt=""></li>
+                    <li><img src="img/MCUMPLEAÑOS.JPG" alt=""></li>
+                </ul>
+            </div>
+        </div> 
+
+    <div class="center">
+        <div class="contenedor-flex">
+            <div class="contenedortexto col-6 col-t-6">
+                <h2>Todo lo que necesitas para tus celebraciones está en EVIGANES</h2>
+                <p>Te traemos una variedad de productos de excelente calidad y al precio mereces.</p>
+            </div>
+            <div class="col-4 col-t-4">
+                <img class="imgprincipal" src="img/peluche1.jpg" alt="">
+            </div>
+
+            <div class="col-4 col-t-4">
+                <img class="imgprincipal" src="img/piñata10.jpg" alt="">
+            </div>
+            <div class="contenedortexto col-6 col-t-6">
+                <h2>Aprovecha las ofertas en productos seleccionados</h2>
+                <p>Traemos nuevos productos cada semana y hay ofertas especiales cada mes.</p>
+            </div>
+
+            <div class="contenedortexto col-6 col-t-6">
+                <h2>Envíos a todos los departamentos de El Salvador</h2>
+                <p>También puedes visitarnos en nuestra tienda en Metrocentro, Sonsonate.</p>
+            </div>
+            <div class="col-4 col-t-4">
+                <img  class="imgprincipal" src="img/flores8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="center">OFERTAS DEL MES</h2>
+    <div class="center">
+        <section class="contenedor-flex" id="lista-items">
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="cardimagen" src="img/Rosas.jpeg">
+                        </div>
+                        
+                        <div class="flip-card-back cardtexto">
+                            <h4>Ramo de rosas</h4>
+                            <br><br>
+                            <h4>Tipo: Rosas rojas miniatura</h4>
+                            <h4>Cantidad: 40</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Ramo de rosas rojas</h3>
+                    <p class="precio"><span>$10.50</span></p>
+                    <button class="botondetalles agregar-carrito" id="100">Añadir a carrito</button>
+                </div>
+            </div>
+            
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="cardimagen" src="img/chocolate2.JPG">
+                        </div>
+                        
+                        <div class="flip-card-back cardtexto">
+                            <h4>Heart Chocolates</h4>
+                            <br><br>
+                            <h4>Chocolates de distintos sabores</h4>
+                            <h4>Cantidad: 11</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Heart Chocolates</h3>
+                    <p class="precio"><span>$15.00</span></p>
+                    <button class="botondetalles agregar-carrito" id="101">Añadir a carrito</button>
+                </div>
+            </div>
+            
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="cardimagen" src="img/anillos2.JPG">
+                        </div>
+                        
+                        <div class="flip-card-back cardtexto">
+                            <h4>Brazalete XII</h4>
+                            <br><br>
+                            <h4>Material: Acero inoxidable</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Brazalete XII</h3>
+                    <p class="precio"><span>$4.60</span></p>
+                    <button class="botondetalles agregar-carrito" id="102">Añadir a carrito</button>
+                </div>  
+            </div>
+
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img class="cardimagen" src="img/Collar.jpeg">
+                        </div>
+                        
+                        <div class="flip-card-back cardtexto">
+                            <h4>Collares LOVE YOU</h4>
+                            <br><br>
+                            <h4>Material: Acero inoxidable</h4>
+                            <h4>Colores plateado y dorado</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Collares LOVE YOU</h3>
+                    <p class="precio"><span>$8.50</span></p>
+                    <button class="botondetalles agregar-carrito" id="103">Añadir a carrito</button>
+                </div>  
+            </div>
+              
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="cardimagen" src="img/anillos3.JPG">
+                        </div>
+                    
+                        <div class="flip-card-back cardtexto">
+                            <h4>Anillos compartidos</h4>
+                            <br><br>
+                            <h4>Material: Acero inoxidable</h4>
+                            <h4>Talla: 5</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Anillos Galaxy</h3>
+                    <p class="precio"><span>$6.79</span></p>
+                    <button class="botondetalles agregar-carrito" id="104">Añadir a carrito</button>
+                </div>
+            </div>
+            
+            <div class="col-6 col-t-7 card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="cardimagen" src="img/dige.JPG">
+                        </div>
+                        
+                        <div class="flip-card-back cardtexto">
+                            <h4>Dige Tú&Yo</h4>
+                            <br><br>
+                            <h4>Material: Acero bañado en plata</h4>
+                            <h4>Tamaño: 1cmx1cm</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <h3>Dige Tú&Yo</h3>
+                    <p class="precio"><span>$2.50</span></p>
+                    <button class="botondetalles agregar-carrito" id="105">Añadir a carrito</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer class="row col-12">
+        <div class="col-4 col-t-6">
+            <a><u>DIRECCIÓN</u></a>
+            <label>Metrocentro, Sonsonate, Sonsonate.
+            </label>
+            <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank"><img height="150px" src="img/direccion.png" alt=""></a>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

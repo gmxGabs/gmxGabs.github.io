@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.fondoheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(193, 193, 255, 0.4);
+    height: 130px;
+    width: auto;
+}
+
+nav ul{
+    margin-top: 30px;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.botones{
+    height: 40px;
+    width: auto;
+    background-color: rgb(226, 97, 168);
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: none;
+    font-family: fuentemenu;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(167, 91, 197);
+}
+
+.botones:hover{
+    background-color: rgb(167, 91, 197);
+}
+
+.iconos{
+    padding-right: 10px;
+    color:white;
+}
+
+.contenedorprincipal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorProductos{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 20px;
+}
+
+.contenedorform{
+    margin-top: 80px;
+    padding: 30px;
+    border: 2px solid grey;
+}
+
+form label, form input{
+    font-family: titulos;
+}
+
+form input{
+    height: 30px;
+    width: 100%;
+}
+
+.inputpequeño{
+    height: 30px;
+    width: 50%;
+}
+
+.contenedorinfo{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tableth{
+    background-color: lightblue;
+    font-family: fuentemenu;
+    text-align: center;
+    padding: 8px;
+}
+
+.borrar-item{
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.borrar-item:hover{
+    background-color: darkred;
+}
+
+table td{
+    font-family: fuentemenu;
+    text-align: center;
+}
+
+.tableth{
+    background-color: lightblue;
+    font-family: fuentemenu;
+    text-align: center;
+    padding: 8px;
+}
+
+table thead tr th{
+    font-family: fuentemenu;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.imgtarjeta{
+    height: 45px;
+    width: auto;
+}
+
+#botonpagar{
+    font-family: fuentemenu;
+    font-size: 20px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#botonpagar:hover{
+    background-color: rgb(116, 207, 238);
+}
+
+footer{
+    background-color: rgb(226, 97, 168);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: fuentemenu;
+    margin-top: 80px;
+}
+
+footer hr{
+    color: white;
+}
+
+footer a, footer label{ 
+    text-align: center;
+    font-family: fuentemenu;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+footer div .caret{
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+
+.contfooter{
+    display: block;
+    padding-top:70px;
+}
+
+@media only screen and (min-width:600px){
+    /*Para las tablets*/
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width:16.66%;}
+    .col-t-3{width:25%;}
+    .col-t-4{width:33.33%;}
+    .col-t-5{width:41.66%;}
+    .col-t-6{width:50%;}
+    .col-t-7{width:58.33%;}
+    .col-t-8{width:66.66%;}
+    .col-t-9{width:75%;}
+    .col-t-10{width:83.33%;}
+    .col-t-11{width:91.66%;}
+    .col-t-12{width:100%;}
+
+    .logo{
+        height: 160px;
+        width: 160px;
+    }
+
+    .botones{
+        height: 50px;
+        width: auto;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    nav ul li{
+        margin-left: 40px;
+    } 
+    
+    table thead tr th{
+        font-family: fuentemenu;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    /*Para escritorio*/
+    .col-1{width: 8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width:25%;}
+    .col-4{width:33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width:50%;}
+    .col-7{width:58.33%;}
+    .col-8{width:66.66%;}
+    .col-9{width:75%;}
+    .col-10{width:83.33%;}
+    .col-11{width:91.66%;}
+    .col-12{width:100%;}
+
+    table thead tr th{
+        font-family: fuentemenu;
+        font-size: 25px;
+        padding: 20px;
+    }
+}

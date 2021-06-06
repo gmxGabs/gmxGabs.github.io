@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    background-color: rgb(226, 97, 168);
+    z-index: 1000;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+header nav ul, footer ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display:inline-block;
+    position: relative;
+    width: 100%;
+}
+
+header nav ul li:hover{
+    background: rgb(155, 39, 155);
+}
+
+header nav ul li a{
+    font-family: fuentemenu;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display:block;
+    position:absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 40px;
+    min-width: 300px;
+}
+
+#vaciarcarrito{
+    padding: 5px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(26, 23, 23);
+    margin: 10px;
+    border: 2px solid rgb(78, 157, 184);
+}
+
+#vaciarcarrito:hover{
+    background-color: rgb(116, 213, 245);
+}
+
+.tableth{
+    background-color: lightblue;
+    font-family: fuentemenu;
+    text-align: center;
+    padding: 8px;
+}
+
+#total{
+    font-family: fuentemenu;
+    font-size: 20px;
+    text-align: center;
+}
+
+.borrar-item{
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+table td{
+    font-family: fuentemenu;
+    text-align: center;
+}
+
+header nav ul li a span{
+    margin-right:10px;
+}
+
+header nav ul li:hover .submenu2{
+    display: none;
+}
+
+header nav ul li .submenu2{
+    display: none;
+    background: rgb(231, 149, 194);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul li .submenu2 li{
+    display: block;   
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+header nav ul li .submenu2 li a{
+    display: block;
+}
+
+header nav ul li .caret{
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.slider{
+    width: 330px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    animation-name: cambio;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 15s;  
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: auto;
+    height: 98px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    16.67%{margin-left: 0%;}
+
+    21.67%{margin-left: -100%;}
+    38.34%{margin-left: -100%;}
+
+    43.34%{margin-left: -200%;}
+    60.01%{margin-left: -200%;}
+
+    65.01%{margin-left: -300%;}
+    81.68%{margin-left: -300%;}
+
+    86.68%{margin-left: -400%;}
+    100%{margin-left: -400%;}
+
+    105%{margin-left: -500%;}
+    121.67%{margin-left: -500%}
+} 
+
+.contenedor-flex{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contenedor-flex :nth-child(1) { order: 1; }
+.contenedor-flex :nth-child(2) { order: 2; }
+.contenedor-flex :nth-child(3) { order: 4; }
+.contenedor-flex :nth-child(4) { order: 3; }
+.contenedor-flex :nth-child(5) { order: 5; }
+.contenedor-flex :nth-child(6) { order: 6; }
+
+.imgprincipal{
+    padding-top: 10px;
+    height: 250px;
+    width: auto;
+}
+
+.contenedortexto{
+    font-family: parrafos;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+p{
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: titulos;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 318px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cardimagen{
+    width: 300px;
+    height: 185px;
+}
+  
+.precio{
+    color: grey;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.cardtexto{
+    padding-top: 50px;
+    text-align: center;
+    font-family: fuentemenu;
+}
+  
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(120, 161, 236);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover{
+    opacity: 0.8;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 190px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+ 
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front{
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    background-color: rgb(169, 217, 233,0.4);
+}
+
+footer{
+    background-color: rgb(226, 97, 168);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: fuentemenu;
+}
+
+footer hr{
+    color: white;
+}
+
+footer a, label{ 
+    text-align: center;
+    font-family: fuentemenu;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+footer div .caret{
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+
+.contfooter{
+    display: block;
+    padding-top:70px;
+}
+
+@media only screen and (min-width:600px){
+    /*Para las tablets*/
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width:16.66%;}
+    .col-t-3{width:25%;}
+    .col-t-4{width:33.33%;}
+    .col-t-5{width:41.66%;}
+    .col-t-6{width:50%;}
+    .col-t-7{width:58.33%;}
+    .col-t-8{width:66.66%;}
+    .col-t-9{width:75%;}
+    .col-t-10{width:83.33%;}
+    .col-t-11{width:91.66%;}
+    .col-t-12{width:100%;}
+
+    header nav ul{
+        padding: 0;
+    }
+    header nav ul li{
+        margin-right: -3px;
+        display: inline-block;
+        text-align: center ;
+        width: 33.19%;
+    }
+    header nav ul li a{
+        display: list-item;
+    }
+
+    header nav ul li .submenu2{
+        width: 100%;
+        position:absolute;
+    }
+
+    .slider{
+        width: 580px;
+        overflow: hidden;
+    }
+
+    .slider img{
+        width: auto;
+        height: 170px;
+    }
+
+    .contenedor-flex :nth-child(1) { order: 1; }
+    .contenedor-flex :nth-child(2) { order: 2; }
+    .contenedor-flex :nth-child(3) { order: 3; }
+    .contenedor-flex :nth-child(4) { order: 4; }
+    .contenedor-flex :nth-child(5) { order: 5; }
+    .contenedor-flex :nth-child(6) { order: 6; }
+}
+
+@media only screen and (min-width:900px){
+    /*Para escritorio*/
+    .col-1{width: 8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width:25%;}
+    .col-4{width:33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width:50%;}
+    .col-7{width:58.33%;}
+    .col-8{width:66.66%;}
+    .col-9{width:75%;}
+    .col-10{width:83.33%;}
+    .col-11{width:91.66%;}
+    .col-12{width:100%;}
+
+    header nav ul li{
+        width: 16.6%;
+    }
+
+    .slider img{
+        width: auto;
+        height: 351px;
+    }
+
+    .contenedortexto{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .slider{
+        width: 850px;
+        overflow: hidden;
+    }
+
+    .slider img{
+        width: auto;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .slider{
+        width: 1000px;
+        overflow: hidden;
+    }
+
+    .slider img{
+        width: auto;
+        height: 290px;
+    }
+}

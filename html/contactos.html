@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+
+    <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="..//fonts/style.css">
+    <link rel="stylesheet" href="../fonts/">
+    <link rel="stylesheet" href="..//css/fuentes.css">
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <img src="../img/ganes.png" height="150px" width="150px" alt="">
+        </div> 
+
+        <nav>
+            <ul>
+                <li><a href="..//index.html"><span class="caret icon-home"></span>Inicio</a></li>
+                <li class="submenu">
+                    <a href="#"><span class="caret icon-circle-down"></span>Categorías</a>
+                    <ul class="submenu2">
+                        <li><a href="cumpleaños.html">Cumpleaños</a></li>
+                        <li><a href="bodas.html">Bodas</a></li>
+                        <li><a href="aniversarios.html">Aniversarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html"><span class="caret icon-user"></span>Nosotros</a></li>
+                <li><a href="contactos.html"><span class="caret icon-phone"></span>Contactános</a></li>
+                <li><a href="carrito.html"><span class="caret icon-cart"></span>Carrito</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <section class="contacto">
+            <div class="contenido">
+                <h2>Contáctanos</h2>
+                <p>Ponte en contacto con nosotros en cualquier momento.</p>
+                <p>Y compártenos tus preguntas, dudas o comentarios.</p>
+            </div>
+            
+            <div class="contenedor">
+                <div class="infocontacto">
+                    <div class="cajacontacto">
+                        <div class="icon"><i class="icon-home"></i></div>
+                            <div class="texto">
+                                <h3>Dirección</h3>
+                                <p>Estamos ubicados en Metrocentro, Sonsonate.</p>
+                                <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank""><img class="mapa" src="..//img/direccion.png" alt=""></a>
+                            </div>
+                    </div>
+                    
+                    <div class="cajacontacto">
+                        <div class="icon"><i class="icon icon-whatsapp"></i></div>
+                            <div class="texto">
+                                <h3>Teléfono</h3>
+                                <p>+(503) 7654 3210</p>
+                            </div> 
+                    </div>
+                    
+                    <div class="cajacontacto">
+                        <div class="icon"><i class="icon-mail4"></i></div>
+                            <div class="texto">
+                                <h3>Correo</h3>
+                                <p>eviganes@gmail.com</p>
+                            </div>
+                    </div>
+                </div>
+                    
+                <div class="formulario">
+                    <form onsubmit="agradecimiento()">
+                        <h2>Enviar mensaje</h2>
+                        <div class="inputcliente">
+                            <input type="text" required="required">
+                            <span>Nombre Completo</span>
+                        </div>
+                            
+                        <div class="inputcliente">
+                            <input type="text" required="required">
+                            <span>Email</span>
+                        </div>
+                            
+                        <div class="inputcliente">
+                            <textarea required="required"></textarea>
+                            <span>Pregunta o Mensaje</span>
+                        </div>
+                            
+                        <div class="inputcliente center">
+                            <input class="botonenviar" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer class="row col-12">
+        <div class="col-4 col-t-6 contfooter">
+            <a><u>HORARIOS DE ATENCIÓN</u></a>
+            <label>Lunes a Viernes: 8:00 am a 6:00 pm</label>
+            <label>Sábado: 8:00 am a 4:00 pm</label>
+            <label>Domingo: 8:00 am a 12:00 pm</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-12 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>   
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        function agradecimiento(){
+            alert("Gracias por tu mensaje, te responderemos pronto!");
+        }
+    </script>
+    <script src="..//js/index.js"></script>
+</body>
+</html>

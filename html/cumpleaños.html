@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños</title>
+
+    <link rel="stylesheet" href="..//fonts/style.css">
+    <link rel="stylesheet" href="../fonts/">
+    <link rel="stylesheet" href="..//css/fuentes.css">
+    <link rel="stylesheet" href="../css/cumpleaños.css">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="..//js/categorias.js"></script>
+</head>
+<body>
+    <header>
+        <div class="barramenu">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span>Categorías</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="..//index.html"><span class="icon-home"></span>Inicio</a></li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-gift"></span>Cumpleaños <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="#globos">Globos</a></li>
+                        <li><a href="#piñatas">Piñatas</a></li>
+                        <li><a href="#dulces">Dulces</a></li>
+                        <li><a href="#invitaciones">Invitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-man-woman"></span>Bodas <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="bodas.html#bouquets">Bouquets</a></li>  
+                        <li><a href="bodas.html#invitacionesb">Invitaciones</a></li>
+                        <li><a href="bodas.html#centrosdemesa">Centros de mesa</a></li>
+                        <li><a href="bodas.html#recuerdos">Recuerdos</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-heart"></span>Aniversarios <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="aniversarios.html#peluches">Peluches</a></li>
+                        <li><a href="aniversarios.html#flores">Flores</a></li>
+                        <li><a href="aniversarios.html#chocolates">Chocolates</a></li>
+                        <li><a href="aniversarios.html#accesorios">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="carrito.html"><span class="icon-cart"></span>Ir a Carrito</a>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-cart"></span></a>
+                    <div id="carrito" class="contenedor-carrito">
+                        <table id="listacarrito">
+                            <thead>
+                                <tr>
+                                    <th class="tableth">Imagen</th>
+                                    <th class="tableth">Artículo</th>
+                                    <th class="tableth">Cantidad</th>
+                                    <th class="tableth">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                
+                            <tbody></tbody>
+                        </table>
+                
+                        <div class="center">
+                            <a href="#" id="vaciarcarrito">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="col-12" id="lista-items"> 
+        <div class="contenedor-grid col-12">
+            <div>
+            <h2 class="titulos itemcumpleaños">CUMPLEAÑOS</h2>
+            <p class="itemparrafo">Sorprende a tus invitados con las mejores decoraciones para tu fiesta de cumpleaños.</p>
+            <p>Escoge tus favoritos entre los diferentes estilos y colores de piñatas, dulces, globos e invitaciones.</p>
+            </div>
+            <div class="contenedor-grid">
+            <img id="cumple" src="../img/cumpleaños.JPG" alt="">
+            </div>
+        </div>
+        
+<!--GLOBOS-->
+        <div class="contenedor-subtitulos">
+            <h3 id="globos" class="subtitulos">Globos</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos1.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos en color pastel</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="1">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS DE COLOR PASTEL<br><span>100 unidades</span></h2>
+                            <h4>$2.50 </h4>
+                            <p>Colores preciosos para fiestas especialmente de niños</p>
+                            <h4>Diseños: </h4>
+                            <p>Bubble, con helio.</p>
+                            <h4>Colores incluidos: </h4>
+                            <p>Blanco, Morado lila y rosa.</p>
+                        </div>
+                </div>
+            </div>
+
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos metálicos</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="2">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS METALICOS<br><span>80 unidades</span></h2>
+                            <h4>$3.00 </h4>
+                            <p>Colores metálicos para fiestas modernas</p>
+                            <h4>Diseños: </h4>
+                            <p>Microfoil con helio.</p>
+                            <h4>Colores incluidos: </h4>
+                            <p>Dorado, plateado, verde, rosa, azul y morado.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos4.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos negro-dorado</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="3">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos4.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS NEGRO-DORADOS<br><span>100 unidades</span></h2>
+                            <h4>$2.00</h4>
+                            <h4>Colores para fiestas de 15 y 16 años</h4>
+                            <h4>Diseño: </h4>
+                            <p>Bubble con helio, tamaño gigante.</p>
+                            <h4>Colores incluidos: </h4> 
+                            <p>Dorado, y negro.</p> 
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos azules-celestes</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.70</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="4">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS AZULES-CELESTES<br><span>100 unidades</span></h2>
+                            <h4>$3.70 </h4>
+                            <p>Especiales para fiestas al aire libre</p>
+                            <h4>Diseño: </h4>
+                            <p>Tamaño gigante, colores con y sin decoraciones</p>
+                            <h4>Colores disponibles: </h4>
+                            <p>Azul aqua, celestes, blancos, azules y blancos decorados.</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos8.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos 3 estilos</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="5">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS TRES ESTILOS<br><span>100 unidades</span></h2>
+                            <h4>$4.00 </h4>
+                            <p>Conformados por globos estilo estrella, globos con decoraciones y básicos</p>
+                            <h4>Diseños incluidos:</h4>
+                            <p>Estrela, decorados, básicos.</p>
+                            <h4>Colores disponibles: </h4>
+                            <p>Dorados, plateados, rojos, azules rosa fuerte y rosa pálido.</p>   
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos happy birthday</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="6">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS HAPPY BIRTHDAY<br><span>150 unidades</span></h2>
+                            <h4>$1.50 </h4>
+                            <p>Decorados con la palabra Happy birthday <p>
+                            <h4>Diseño:</h4>
+                            <p>Básicos con helio</p>
+                            <h4>Colores incluidos: </h4>
+                            <p>Rosados, azules, morados, anaranjados, verde y celeste.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos9.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos combinados</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.80</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="7">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos9.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS COMBINADOS<br><span>80 unidades</span></h2>
+                            <h4>$2.80 </h4>
+                            <h4>Combinados con tres tipos de globos </h4>
+                            <h4>Diseños incluidos: </h4>
+                            <p>Metálicos y trasnparentes con decoración.</p>
+                            <h4>Colores disponibles: </h4>
+                            <p>Dorados, plateados, azul y morados.</p>    
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globos6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Globos rosas</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="8">A carrito</button>
+                    <button class="verdetalles">Detalles</button></div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globos6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>GLOBOS ROSAS<br><span>150 unidades</span></h2>
+                            <h4>$1.50</h4>
+                            <h4>Diseñados para fiestas de niñas y quinceañeras</h4>
+                            <h4>Diseño:</h4>
+                            <p>Básicos con helio.</p>
+                            <h4>Colores incluidos:</h4>
+                            <p>Rosa fuerte, rosado pálido y blancos.</p> 
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globo10.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Números metálico</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="9">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globo10.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>NÚMEROS METÁLICOS<br><span>1 unidad</span></h2>
+                            <h4>$1.50</h4>
+                            <h4>Diseños de números para todo tipo de fiesta</h4>
+                            <h4>Diseño:</h4>
+                            <p>Microfoil sin helio.</p>
+                            <h4>Colores disponibles:</h4>
+                            <p>Dorados y plateados.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/globo11.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Números rosa metálico</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="10">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/globo11.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>NUMEROS ROSA METALICOS<br><span>1 unidad</span></h2>
+                            <h4>$1.50 </h4>
+                            <h4>Para fiestas de niñas y adolecentes</h4>
+                            <h4>Diseño:</h4>
+                            <p>Microfoil sin helio.</p>
+                            <h4>Colores disponibles:</h4>
+                            <p>Rosa metálico.</p> 
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--PIÑATAS-->
+        <div class="contenedor-subtitulos">
+            <h3 id="piñatas" class="subtitulos">Piñatas</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Pony</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="11">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA PONY<br><span>1 unidad</span></h2>
+                            <h4>$8.00</h4>
+                            <h4>Preciosa piñata con forma de pony, adecuada para los mas pequeños</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Ancho: 0.34m, altura: 1.50m, largo: 1m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata2.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Pokebola</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="12">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA POKEBOLA<br><span>1 unidad</span></h2>
+                            <h4>Perfecta para los fans de Pokemon los pequeños la amarán, también los que aman este grandioso videojuego</h4>
+                            <h4>$6.50</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>0.5m de diámetro.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Estrella</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$5.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="13">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA ESTRELLA<br><span>1 unidad</span></h2>
+                            <h4>$5.00</h4>
+                            <h4>Linda piñata en forma de estrella, con colores vistosos, y temática Mexicana</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1.50m, ancho 1m.</p> 
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Monstruo</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$5.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="14">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA MONSTRUO<br><span>1 unidad</span></h2>
+                            <h4>$5.00 </h4>
+                            <h4>Linda piñata en forma de monstruo, especial para cualquier ocasión, los que gustan de Monster Inc. la amarán</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1.50m, anchura: 0.70m.</p> 
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata5.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Dragón</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.70</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="15">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata5.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA DRAGÓN<br><span></span></h2>
+                            <h4>$8.70 </h4>
+                            <h4>Piñata muy especial con forma de dragón, perfecta para aquellos que gustan de los cuentos de esta maravillosa mitología.</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1m, largo: 1.20m, ancho: 0.50m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata6.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Emoji</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$5.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="16">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata6.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA EMOJI<br><span>1 unidad</span></h2>
+                            <h4>$5.00 </h4>
+                            <h4>Divertida y economica piñata con forma de Emoji, están donde sea, hasta en tu fiesta de cumpleaños</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Diámetro: 0.70m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata9.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Pastel</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="17">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata9.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA PASTEL<br><span>1 unidad</span></h2>
+                            <h4>$6.50 </h4>
+                            <h4>Quieres diferenciar y ser único, pues esta piñata en forma de pastel es la adecuada para ti</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1.70m, ancho: 1m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata10.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Llama Fortnite</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="18">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata10.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA LLAMA FORTNITE<br><span>1 unidad</span></h2>
+                            <h4>$8.00 </h4>
+                            <h4>A qué niño o niña no le gusta fortnite, pues sorpréndelos con esta bonita piñata</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Ancho: 1m, altura: 1.50m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata11.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Monito</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="19">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata11.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA MONITO<br><span>1 unidad</span></h2>
+                            <h4>$8.00 </h4>
+                            <h4>Bonita piñata en forma de monito, a tu niño o niña le encantará</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1.70m, ancho: 0.80m.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/piñata12.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Piñata Osito</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="20">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/piñata12.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>PIÑATA OSITO<br><span>1 unidad</span></h2>
+                            <h4>$6.00 </h4>
+                            <h4>Te gustan los ositos, esta piñata es la perfecta para ti</h4>
+                            <h4>Dimensiones:</h4>
+                            <p>Altura: 1.80m, ancho: 0.60m.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+ 
+<!--DULCES-->
+        <div class="contenedor-subtitulos">
+            <h3 id="dulces" class="subtitulos">Dulces</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/dulces1.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Dulces ¡Piñata Surprise!</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="21">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/dulces1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>DULCES !PIÑATA SURPRISE!<br><span>1 paquete</span></h2>
+                            <h4>$6.50</h4>
+                            <h4>Para que sorprendas a todos tus invitados</h4>
+                            <h4>Cantidad:</h4>
+                            <p>3lbs.</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/dulces3.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Dulces Super</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="22">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/dulces3.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>DULCES SUPER<br><span>1 paquete</span></h2>
+                            <h4>$4.00</h4>
+                            <h4>Una gran variedad de dulces, no te faltara nada</h4>
+                            <h4>Cantidad:</h4>
+                            <p>3lbs.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/dulces4.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Dulces Party Flavors</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.20</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="23">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/dulces4.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>DULCES PARTY FLAVORS<br><span>1 paquete</span></h2>
+                            <h4>$4.20</h4>
+                            <h4>La mejor variedad de dulces flavors.</h4>
+                            <h4>Cantidad:</h4>
+                            <p>3lbs.</p> 
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/dulces5.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Dulces Piñata Mix</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="24">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/dulces5.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>DULCES PIÑATAS MIX<br><span>1 paquete</span></h2>
+                            <h4>$4.00</h4>
+                            <h4>Deliciosos, esponjosos y crujientes</h4>
+                            <h4>Cantidad:</h4>
+                            <p>3lbs.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/dulces6.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Dulces El Piñatero</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$5.10</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="25">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/dulces6.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>DULCES EL PIÑATERO<br><span>1 paquete</span></h2>
+                            <h4>$5.10</h4>
+                            <h4>La mejor variedad de dulces el Piñatero</h4>
+                            <h4>Cantidad:</h4>
+                            <p>3lbs.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--INVITACIONES-->
+        <div id="invitaciones" class="contenedor-subtitulos">
+            <h3 class="subtitulos">Invitaciones</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Baby Mickey</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="26">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Baby Mickey<br><span>Para los más pequeños</span></h2>
+                            <h4>$3.00</h4>
+                            <h4>Tarjetas preciosas para fiestas de bebés, Mickey la mejor opción</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Hello Kitty</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="27">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Hello Kitty<br><span>Para las pequeñas</span></h2>
+                            <h4>$3.00 </h4>
+                            <h4>Hello Kitty se ve preciosa en nuestras tarjetas, irradian dulzura y tranquilidad</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Sponge Bob</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="28">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Sponge Bob<br><span>Para los pequeños</span></h2>
+                            <h4>$3.00 </h4>
+                            <h4>Los pequeños aman a Bob Esponja, llénales de felicidad con estas tarjetas</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Mikey Mouse</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="29">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Mikey Mouse<br><span>Para los niños</span></h2>
+                            <h4>$3.00 </h4>
+                            <h4>Nos encanta Walt Disney y su personaje icónico, es el adecuado para tu tarjeta de cumpleaños</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion5.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Sonic</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="30">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion5.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Sonic<br><span>Para los niños</span></h2>
+                            <h4>$3.00</h4>
+                            <h4>Los niños aman los videojuegos, y Sonic es uno de los mejores representantes para tu tarjeta</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Angry Birds</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="31">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Angry Birds<br><span>Para los pequeños</span></h2>
+                            <h4>$3.00 </h4>
+                            <h4>Uno de los videojuegos más famosos y los niños lo aman, no pierdas la oportunidad de una temática de Angry Birds</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-4 col-t-6">
+                <img class="productogrande" src="..//img/invitacion7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Tarjetas Pocoyo</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="32">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacion7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Tarjetas Pocoyo<br><span>Para los más pequeños</span></h2>
+                            <h4>$3.00 </h4>
+                            <h4>Lindas tarjetas con los personajes de Pocoyo, qué adorable personaje!</h4>
+                            <h4>Cantidad:</h4>
+                            <p>30 unidades</p> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row col-12">
+        <div class="col-4 col-t-6">
+            <a><u>DIRECCIÓN</u></a>
+            <label>Metrocentro, Sonsonate, Sonsonate.
+            </label>
+            <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank"><img height="150px" src="..//img/direccion.png" alt=""></a>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>
+    <script src="..//js/carrito.js"></script>
+</body>
+</html>

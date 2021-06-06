@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodas</title>
+
+    <link rel="stylesheet" href="../fonts/style.css">
+    <link rel="stylesheet" href="../fonts/">
+    <link rel="stylesheet" href="..//css/fuentes.css">
+    <link rel="stylesheet" href="../css/bodas.css">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="..//js/categorias.js"></script>
+</head>
+<body>
+    <header>
+        <div class="barramenu">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span>Categorías</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="..//index.html"><span class="icon-home"></span>Inicio</a></li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-man-woman"></span>Bodas <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="#bouquets">Bouquets</a></li>  
+                        <li><a href="#invitacionesb">Invitaciones</a></li>
+                        <li><a href="#centrosdemesa">Centros de mesa</a></li>
+                        <li><a href="#recuerdos">Recuerdos</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-gift"></span>Cumpleaños <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="cumpleaños.html#globos">Globos</a></li>
+                        <li><a href="cumpleaños.html#piñatas">Piñatas</a></li>
+                        <li><a href="cumpleaños.html#dulces">Dulces</a></li>
+                        <li><a href="cumpleaños.html#invitaciones">Invitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-heart"></span>Aniversarios <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="aniversarios.html#peluches">Peluches</a></li>
+                        <li><a href="aniversarios.html#flores">Flores</a></li>
+                        <li><a href="aniversarios.html#chocolates">Chocolates</a></li>
+                        <li><a href="aniversarios.html#accesorios">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="carrito.html"><span class="icon-cart"></span>Ir a Carrito</a>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-cart"></span></a>
+                    <div id="carrito" class="contenedor-carrito">
+                        <table id="listacarrito">
+                            <thead>
+                                <tr>
+                                    <th class="tableth">Imagen</th>
+                                    <th class="tableth">Artículo</th>
+                                    <th class="tableth">Cantidad</th>
+                                    <th class="tableth">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                
+                        <div class="center">
+                            <a href="#" id="vaciarcarrito">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="col-12" id="lista-items">
+        <div class="contenedor-grid col-12">
+            <div>
+            <h2 class="titulos">BODAS</h2>
+            <p class="itemparrafo">Sabemos que tu boda debe ser mágica y perfecta.</p>
+            <p>Por eso te ofrecemos una variedad de lindos bouquets, centros de mesa, invitaciones y recuerdos</p><p>para que ese día sea especial y memorable para ti y tus invitados.</p>
+            </div>
+            <div class="contenedor-grid">
+            <img id="cumple" src="../img/bodas.JPG" alt="">
+            </div>
+        </div>
+        
+<!--BOUQUETS-->
+        <div class="contenedor-subtitulos">
+            <h3 id="bouquets" class="subtitulos">Bouquets</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/bouquet1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Bouquet tradicional</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$35.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="64">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Bouquet tradicional<br><span></span></h2>
+                            <h4>$35.00</h4>
+                            <p>Arreglo mediano de 10 rosas blancas recubiertas con velo de novia y hoja de cala. Si eres de las novias tradicionales
+                                este arreglo precioso de flores es el mejor. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/bouquet2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Miss rose bouquet</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$25.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="65">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Miss Rose Bouquet<br><span></span></h2>
+                            <h4>$25.50</h4>
+                            <p>Arreglo pequeño de rosas rosadas y blancas envueltas en hojas de eucalipto y flor de manzanilla. Adecuado 
+                                para usar en tonalidades suaves y aparte de ello desprende un aroma gustante. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/bouquet3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Bouquet Otoño</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$32.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="66">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet3.jpg"" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Bouquet Otoño<br><span></span></h2>
+                            <h4>$32.00</h4>
+                            <p>Ramo mediano 12 rosas con diversidad de color, dalia blanca, con lirio de los valles y eucalipto. El bouquet Otoño
+                                como lo dice su propio nombre, puedes usarlo para el hermoso período de hojas caídas. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/bouquet4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Bouquet Primavera</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$44.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="67">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Bouquet Primavera<br><span></span></h2>
+                            <h4>$44.00</h4>
+                            <p>Ramo grande con rosas de colores, dalias, velo de novia y jazmín, adornadas por hojas de lecho </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/bouquet5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Clasic white Bouquet</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$30.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="68">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Clasic White Bouquet<br><span></span></h2>
+                            <h4>$30.00</h4>
+                            <p>Ramo chico con hojas de eucalipto y rosas blancas con una Dalia en el centro </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img//bouquet6.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Divine bouquet</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$40.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="69">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img//bouquet6.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Divine Bouquet<br><span></span></h2>
+                            <h4>$40.00</h4>
+                            <p>Cascada de ramo mediano con 12 rosas rojas 6 rosas pequeñas blancas adornado el centro con una rosa azul y 6 más exparcidas a los lados, 
+                                con hojas de eucalipto y un pequeño toque de velo de novia </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/bouquet7.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Marry me bouquet</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$48.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="70">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet7.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Marry me Bouquet<br><span></span></h2>
+                            <h4>$48.00</h4>
+                            <p>Arreglo sencillo chico con todas blancas-rosadas y rosas rosas tintadas del 
+                                centro de negro dándole un degradado, un toque de velo de novia, con spyrea así como clavel verde </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/bouquet8.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Juliet rose bouquet</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$45.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="71">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/bouquet8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Julie rose Bouquet<br><span></span></h2>
+                            <h4>$45.00</h4>
+                            <p>Ramo mediano de alrededor de 24  blancas y rosas con una pequeña decoración con hoja de eucalipto</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--INVITACIONES-->
+        <div class="contenedor-subtitulos">
+            <h3 id="invitacionesb" class="subtitulos">Invitaciones</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/invitacionb1.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación black and white</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$59.99</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="72">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación black and white<br><span></span></h2>
+                            <h4>$59.99</h4>
+                            <p>La parte en blanca puede tener tiene relieves de distintos grosor, 
+                                la flor puede ser a elección, mientras en esta tarjeta se resalta el traje de novio.
+                            </p>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/invitacionb2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación tradicional dorada</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$65.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="73">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación tradicional dorada<br><span></span></h2>
+                            <h4>$65.00</h4>
+                            <p>Tarjeta blanco perlado, con diseños resaltados impreso en papel resistente, color de cinta a elección</p>
+                            <h4>Dimensiones: 8x15 cms</h4>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/invitacionb3.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación tradicional rosa</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$58.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="74">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb3.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación tradicional rosa<br><span></span></h2>
+                            <h4>$58.00</h4>
+                            <p>Tarjeta impresa en papel de opalina, tiene dos formatos variables de apertura, cuenta con una cinta color rosa, 
+                                al igual que su base, convirtiendola en una tarjeta de invitación tradicional rosa.
+                            </p>
+                            <h4>Dimensiones: 6x15 cms</h4>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/invitacionb4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación him&her</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$58.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="75">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación him&her<br><span></span></h2>
+                            <h4>$58.00</h4>
+                            <p>Tarjeta impresa con papel resistente, la mayor parte de fuera contiene la decoración de traje de boda nupcial,
+                                resaltando el de la novia y siendo la apertura de la tarjeta.
+                            </p>
+                            <h4>Dimensiones: 8x20 cms</h4>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/invitacionb5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación silver-white</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$58.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="76">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación silver-white<br><span></span></h2>
+                            <h4>$58.00</h4>
+                            <p>Envueltas en un lazo plateado, estas tarjetas estan impresas a base de material resistente color plateado.</p>
+                            <h4>Dimensiones: 8x15 cms</h4>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/invitacionb6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Invitación perfect day</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$58.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="77">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/invitacionb6.jpg"" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Invitación perfect day<br><span></span></h2>
+                            <h4>$58.00</h4>
+                            <p>Está mayor compuesta por telas bordadas a mano, la tela como el diseño de los trajes 
+                                pueden ser a elección, en el interior es de papel color blanco.</p>
+                            <h4>Dimensiones: 15x8 cms</h4>
+                            <h4>Cantidad: 100 unidades</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+ 
+<!--CENTROS DE MESA-->
+        <div class="contenedor-subtitulos">
+            <h3 id="centrosdemesa" class="subtitulos">Centros de mesa</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Lover</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.25</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="78">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Lover<br><span>Naturales</span></h2>
+                            <h4>$4.25</h4>
+                            <p>Centro de mesa pequeño y sencillo con 6 rosas blancas y rosas </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa tradicional</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="79">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa tradicional<br><span>Naturales</span></h2>
+                            <h4>$3.50</h4>
+                            <p>Centro de mesa pequeño de rosas blancas pequeñas,
+                                 dalias, velo de novia y Hojas de helecho sentadas en un centro de cristal pequeño </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Hydrangeas</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="80">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Hydrageans<br><span>Naturales</span></h2>
+                            <h4>$3.00</h4>
+                            <p>Centro de mesa mediano con hojas de eucalipto y 
+                                hortensias grandes así como hojas de helecho sentadas en un pequeño centro redondo </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Rosewhite</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="81">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Rosewhite<br><span>Naturales</span></h2>
+                            <h4>$4.50</h4>
+                            <p>Centro de mesa pequeño montado de manera platal 
+                                en un soporte tipo copa, adornado de rosas rosas palo y hojas de helecho </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Minimal</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="82">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Minimal<br><span>Naturales</span></h2>
+                            <h4>$2.00</h4>
+                            <p>Centro de mesa sencillo y pequeño montado en un tarro de conservas 
+                                regular, adornado por una cinta, unas cuantas rosas blancas a medio abrir, velo de novia y hojas de eucalipto</p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/centromesa6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa clásico blanco</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="83">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa clásico blanco<br><span>Naturales</span></h2>
+                            <h4>$8.50</h4>
+                            <p>Centro de mesa mediano montado en una caja de madera adornado por claveles blancos Y adornado con mangolia </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/centromesa7.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Cinderella</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$12.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="84">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa7.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Cinderella<br><span>Naturales</span></h2>
+                            <h4>$12.50</h4>
+                            <p>Centro de mesa mediano-grande montado en una base de cristal 
+                                adornado con rosas blancas, con Jazmin, hortensias azules y follaje variado </p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/centromesa8.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Centro de mesa Rose Time</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="85">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/centromesa8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Centro de mesa Rose Time<br><span>Naturales</span></h2>
+                            <h4>$8.00</h4>
+                            <p>Centro de mesa grande con rosas de diversos colores, 
+                                casandras, hojas de eucalipto y spyrea montadas en un centro de forma copal.</p>
+                            <h4>Precio por unidad</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--RECUERDOS-->
+        <div class="contenedor-subtitulos">
+            <h3 id="recuerdos" class="subtitulos">Recuerdos</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/recuerdo1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Mini maceteros</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="86">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Mini maceteros<br><span>Plantita natural</span></h2>
+                            <h4>$2.50</h4>
+                            <p>Recuerdos elaborados con tela bordada a mano, contiene lo que son minis cactus en cada pequeña bolsita, al
+                                igual que una etiqueta para colocar el nombre de cada persona.
+                            </p>
+                            <h4>Dimensiones: 8x13cms</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/recuerdo2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Mini Pine Cones</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="87">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Mini pines cones<br><span>Pine cone preservado</span></h2>
+                            <h4>$1.00</h4>
+                            <p>Recuerdo elaborado con papel resistente color rosa, como parte de la decoración contamos con un pequeña planta
+                                pines, viñeta pegada de una sola vez en la base. 
+                            </p>
+                            <h4>Dimensiones: 10x10cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/recuerdo3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Plant Jar Mini</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$2.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="88">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Plant Jar Mini <br><span>Natural</span></h2>
+                            <h4>$2.50</h4>
+                            <p>Si quieres dar un recuerdo ecológico, el Jar mini es para tí. Cuenta con una base de vidrio y una planta cultivada.
+                                La viñeta va sostenida con un cordón alrededor de bocadura.
+                            </p>
+                            <h4>Dimensiones: 7x18cms</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/recuerdo4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Honey Jar</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$3.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="89">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Honey Jar<br><span>Miel pura</span></h2>
+                            <h4>$3.50</h4>
+                            <p>Si dar dulces es lo tuyo, el Honey Jar es un recuerdo muy efectivo y memorable para dar. Tenemos a nuestra disposición 
+                                un pequeño bote de miel, acompañado de una singular cuchara en forma de panal. 
+                            </p>
+                            <h4>Dimensiones: 5x10cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/recuerdo5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Mini rosè 1</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="90">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Mini rosè 1<br><span>Flores artificiales</span></h2>
+                            <h4>$1.50</h4>
+                            <p>Recuerdo elaborado con papel resistente color rosa, como parte de la decoración contamos con pequeñas rosas de colores rojos y rosas,
+                                viñeta pegada de una sola vez en la base. </p>
+                            <h4>Dimensiones: 5x6cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productopequeño" src="..//img/recuerdo7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Mini rosè 2</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$1.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="91">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--Modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/recuerdo7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Mini rosè<br><span>Flores artificiales</span></h2>
+                            <h4>$1.50</h4>
+                            <p>Recuerdo elaborado con papel resistente color rosa, como parte de la decoración contamos con una rosa tamaño medio de 
+                                diferente color, viñeta pegada de una sola vez en la base. </p>
+                            <h4>Dimensiones: 5x6cms</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row col-12">
+        <div class="col-4 col-t-6">
+            <a><u>DIRECCIÓN</u></a>
+            <label>Metrocentro, Sonsonate, Sonsonate.
+            </label>
+            <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank""><img height="150px" src="..//img/direccion.png" alt=""></a>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>
+    <script src="..//js/carrito.js"></script>
+</body>
+</html>

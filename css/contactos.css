@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    background-color: rgb(226, 97, 168);
+    z-index: 1000;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+header nav ul, footer ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display:inline-block;
+    position: relative;
+    width: 100%;
+}
+
+header nav ul li:hover{
+    background: rgb(155, 39, 155);
+}
+
+header nav ul li a{
+    font-family: fuentemenu;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul li a span{
+    margin-right:10px;
+}
+
+header nav ul li:hover .submenu2{
+    display: none;
+}
+
+header nav ul li .submenu2{
+    display: none;
+    background: rgb(231, 149, 194);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul li .submenu2 li{
+    display: block;   
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+header nav ul li .submenu2 li a{
+    display: block;
+}
+
+header nav ul li .caret{
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+p{
+    padding-top: 10px;
+    font-family: parrafos;
+    font-size: 22px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: titulos;
+}
+
+h3{
+    font-size: 20px;
+    font-family: titulos;
+}
+
+.contacto{
+    position: relative;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/background1.png);
+    background-size: cover;
+}
+
+.contacto .contenido{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contacto .contenido h2{
+    font-size:  36px;
+    font-weight: 500;
+    color: black;
+}
+
+.contacto .contenido p{
+    font-weight: 300;
+    color: black;
+}
+
+.mapa{
+    height: 100px;
+    width: auto;
+    padding-top: 10px;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.contenedor .infocontacto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.contenedor .infocontacto, .formulario{
+    width: 70%;
+} 
+
+.contenedor .infocontacto .cajacontacto{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contenedor .infocontacto .cajacontacto .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contenedor .infocontacto .cajacontacto .texto{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contenedor .infocontacto .cajacontacto .texto h3{
+    font-weight: 500;
+    color: black;
+}
+
+.formulario{
+    width: 100%;
+    padding: 50px;
+    background: rgb(155, 39, 155, 0.6);
+}
+
+.formulario h2{
+    font-size: 30px;
+    color: rgb(243, 241, 245);
+    font-weight: 500;
+    font-family: fuentemenu;
+}
+
+.formulario .inputcliente{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: parrafos;
+}
+
+.formulario .inputcliente input, .formulario .inputcliente textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    font-family: parrafos;
+}
+
+.formulario .inputcliente span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.formulario .inputcliente input:focus ~ span,
+.formulario .inputcliente input:valid ~ span,
+.formulario .inputcliente textarea:focus ~ span,
+.formulario .inputcliente textarea:valid ~ span{
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.formulario .inputcliente .botonenviar{
+    width: 100px;
+    background: rgb(228, 56, 150);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.formulario .inputcliente .botonenviar:hover{
+    background-color: rgb(202, 15, 118);
+}
+
+footer{
+    background-color: rgb(226, 97, 168);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: fuentemenu;
+}
+
+footer hr{
+    color: white;
+}
+
+footer a, label{ 
+    text-align: center;
+    font-family: fuentemenu;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+footer div .caret{
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+
+.contfooter{
+    display: block;
+    padding-top:40px;
+}
+
+@media only screen and (min-width:600px){
+    /*Para las tablets*/
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width:16.66%;}
+    .col-t-3{width:25%;}
+    .col-t-4{width:33.33%;}
+    .col-t-5{width:41.66%;}
+    .col-t-6{width:50%;}
+    .col-t-7{width:58.33%;}
+    .col-t-8{width:66.66%;}
+    .col-t-9{width:75%;}
+    .col-t-10{width:83.33%;}
+    .col-t-11{width:91.66%;}
+    .col-t-12{width:100%;}
+
+    header nav ul{
+        padding: 0;
+    }
+    header nav ul li{
+        margin-right: -3px;
+        display: inline-block;
+        text-align: center ;
+        width: 33.19%;
+    }
+    header nav ul li a{
+        display: list-item;
+    }
+
+    header nav ul li .submenu2{
+        width: 100%;
+        position:absolute;
+    }
+
+    .contacto{
+        padding: 50px 100px;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+    
+    .formulario{
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    .mapa{
+        height: 150px;
+        width: auto;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    /*Para escritorio*/
+    .col-1{width: 8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width:25%;}
+    .col-4{width:33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width:50%;}
+    .col-7{width:58.33%;}
+    .col-8{width:66.66%;}
+    .col-9{width:75%;}
+    .col-10{width:83.33%;}
+    .col-11{width:91.66%;}
+    .col-12{width:100%;}
+
+    header nav ul li{
+        width: 19.93%;
+    }
+
+    .contenedor{
+        flex-direction: row;
+    }
+
+    .formulario{
+        width: 50%;
+    } 
+}

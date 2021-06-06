@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/style.css">
+    <link rel="stylesheet" href="../fonts/">
+    <link rel="stylesheet" href="..//css/fuentes.css">
+    <link rel="stylesheet" href="../css/aniversarios.css">
+    <title>Aniversarios</title>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="..//js/categorias.js"></script>
+</head>
+<body>
+    <header>
+        <div class="barramenu">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span>Categorías</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="..//index.html"><span class="icon-home"></span>Inicio</a></li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-heart"></span>Aniversarios <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="#peluches">Peluches</a></li>
+                        <li><a href="#flores">Flores</a></li>
+                        <li><a href="#chocolates">Chocolates</a></li>
+                        <li><a href="#accesorios">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-gift"></span>Cumpleaños <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="cumpleaños.html#globos">Globos</a></li>
+                        <li><a href="cumpleaños.html#piñatas">Piñatas</a></li>
+                        <li><a href="cumpleaños.html#dulces">Dulces</a></li>
+                        <li><a href="cumpleaños.html#invitaciones">Invitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-man-woman"></span>Bodas <span class="caret icon-circle-down"></span></a>
+                    <ul class="submenu2">
+                        <li><a href="bodas.html#bouquets">Bouquets</a></li>  
+                        <li><a href="bodas.html#invitacionesb">Invitaciones</a></li>
+                        <li><a href="bodas.html#centrosdemesa">Centros de mesa</a></li>
+                        <li><a href="bodas.html#recuerdos">Recuerdos</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="carrito.html"><span class="icon-cart"></span>Ir a Carrito</a>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="icon-cart"></span></a>
+                    <div id="carrito" class="contenedor-carrito">
+                        <table id="listacarrito">
+                            <thead>
+                                <tr>
+                                    <th class="tableth">Imagen</th>
+                                    <th class="tableth">Artículo</th>
+                                    <th class="tableth">Cantidad</th>
+                                    <th class="tableth">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                
+                            <tbody></tbody>
+                        </table>
+                
+                        <div class="center">
+                            <a href="#" id="vaciarcarrito">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="col-12" id="lista-items">
+        <div class="contenedor-grid col-12">
+            <div>
+            <h2 class="titulos">ANIVERSARIOS</h2>
+            <p class="itemparrafo">Tú persona especial merece que la consientas con las mejores muestras de cariño.</p>
+            <p>Selecciona su peluche favorito, un ramo de rosas y hazle saber cuánto la amas.</p>
+            </div>
+            <div class="contenedor-grid">
+            <img id="cumple" src="../img/aniversarios.JPG" alt="">
+            </div>
+        </div>
+        
+<!--PELUCHES-->
+        <div class="contenedor-subtitulos">
+            <h3 id="peluches" class="subtitulos">Peluches</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Puppy</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="33">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Puppy<br><span>Jugueton</span></h2>
+                            <h4> $7.50</h4>
+                            <p>Un mediano peluche en forma de perro, que hara de tus días mas felices. Al igual puede
+                            ser un lindo detalle para regalar a esa persona especial, no lo pienses más y llévatelo a este increíble precio
+                            Edición única por tiempo limitado.</p>
+                            <h4>Tamaño: 50 cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Osito</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$12.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="34">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche de osito<br><span>Peluchelandia</span></h2>
+                            <h4>$12.00</h4>
+                            <p>Un lindo y mediano oso de felpa, con el cual contamos en color, café, blanco y rosado.
+                                Perfecto para llevar a los días de campo y un hermoso regalo que alegrará a tu pareja.
+                            </p>
+                            <h4>Tamaño: 22cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Pikachu</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$10.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="35">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Pikachu<br><span>Siman</span></h2>
+                            <h4>$10.00</h4>
+                            <p>El pokemon mas querido por todos esta aquí en EVIGANES. Llévate a pikachu a un precio sumamente accesible que no 
+                                muchas tiendas tienen, estilo único y apresúrate, que los stocks están que se acaban. 
+                            </p>
+                            <h4>Tamaño: 20 cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Polar Bear</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$12.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="36">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Polar Bear<br><span>Peluchelandia</span></h2>
+                            <h4>$12.00</h4>
+                            <p> Un regalo lindo para tu pareja es esta maravillosa elección de regalo, un increíble polar bear. Contamos
+                                con un único diseño color blanco, no lo pienses más y obsequia este lindo detalle. 
+                            </p>
+                            <h4>Tamaño: 25cms</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Mini Teddy Bear</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$4.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="37">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Mini Teddy Bear<br><span>Mundo Feliz</span></h2>
+                            <h4>$4.50</h4>
+                            <p> ¿Quién dijo que las cosas pequeñas no pueden regalarse también? Te traemos al mini teddy que queda perfecto para regalar 
+                                a tu pareja y sea un lindo detalle que pueda llevar a todos lados. Contamos con un único diseño.  
+                            </p>
+                            <h4>Tamaño: 10cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Mapache</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="38">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Mapache<br><span>Gift Shop</span></h2>
+                            <h4>$8.00</h4>
+                            <p>Los mapaches suelen ser buena elección a la hora regalar ese lindo detalle, es de suave tela e incluye una cola
+                                peluda que lo hace ver más lindo aún. Puede ser útil a la hora de usarlo como una almohada, por la calidad con la que cuenta.
+                            </p>
+                            <h4>Tamaño: 55cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/peluche7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Cerdito Pua</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$10.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="39">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Cerdito Pua <br><span>Jugueton</span></h2>
+                            <h4>$10.00</h4>
+                            <p>Suave mascota de peluche para aquellas parejas que le encanten lo lindo. Originalmente conocido como Pua, 
+                                este pequeño amigo aparece en Moana, cuenta con diseño único y es del tipo unisex.
+                            </p>
+                            <h4>Tamaño: 22cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/peluche8.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Baby Yoda</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$13.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="40">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Baby Yoda<br><span>Siman</span></h2>
+                            <h4>$13.00</h4>
+                            <p>Si tu pareja es fanática de la saga Star Wars, te tenemos un Baby Yoda que lograrás enamorarla aun más en su día especial. 
+                                Contamos con un único diseño, al igual que su precio que es único. 
+                            </p>
+                            <h4>Tamaño: 25cms</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/peluche9.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Peluche Perrito</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$7.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="41">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/peluche9.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Peluche Perrito<br><span>Gift Shop</span></h2>
+                            <h4>$7.00</h4>
+                            <p>Los perros con una flor, es la mejor combinación que verás en este mundo, perfecto para alegrar a tu pareja en cualquier ocasión. El pequeño perro cuenta con una flor
+                                entre sus dientes, tiene un diseño único al igual que con su tamaño. 
+                            </h4>
+                            <p>Tamaño: 10cmsx12cms</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--FLORES-->
+        <div class="contenedor-subtitulos">
+            <h3 id="flores" class="subtitulos">Flores</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo de rosas rojas</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$15.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="42">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo de rosas rojas<br><span>Naturales</span></h2>
+                            <h4>$15.00</h4>
+                            <p>Conjunto de rosas rojas naturales, diseñadas para demostrar el amor, la pasion y el fuego que sientes por tu pareja.
+                                Protegidas durante todo el proceso de envio, suficiente agua y sin algún riesgo de lastimarse por las espinas.
+                            </p>
+                            <h4>Unidades: 14</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores2.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Flores rosadas variedad</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$10.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="43">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores2.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Flores rosadas<br><span>Naturales</span></h2>
+                            <h4>$10.00</h4>
+                            <p>Las rosas rosadas o rosa simbolizan la bondad, la simpatía, la gratitud y la belleza de una persona. Obsequia un lindo ramo de rosas rosadas
+                                a tu persona apreciada convirtiendolo en un gesto de cariño, generosidad, respeto, ternura y admiración. Decoradas con un pequeño liston y papel decorativo</p>
+                            <h4>Unidades: 12</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo de rosas rojas</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$20.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="44">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo de rosas rojas<br><span>Naturales</span></h2>
+                            <h4>$20.00</h4>
+                            <p>Si estas empezando una relación, que gesto mas lindo que obsequiar un ramo de rosas rojas. Cada ramo viene decorado
+                                con pequeñas florecillas blancas en medio, tela roja que las cubre y papel decorativo.</p>
+                            <h4>Unidades: 18</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo Garden</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$65.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="45">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo Garden<br><span>Naturales</span></h2>
+                            <h4>$65.00</h4>
+                            <p>¿No te decides por cual color de rosa? Fácil regalale todo un conjunto de diferentes colores, un hermoso mini jardín
+                                en todo un ramo de flores suele ser una de las mejores ideales. Incluye desde rosas, margaritas y girasoles. 
+                            </p>
+                            <h4>Unidades: 35</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores4.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo full pink</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$28.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="46">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores4.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo full pink<br><span>Naturales</span></h2>
+                            <h4>$28.00</h4>
+                            <p>El rosa simbolizando la bondad que hay detrás de cada persona, es perfecto para hacer sentir a tu pareja bien en aquellos momentos
+                                de lealtad. Este arreglo viene elaborado dentre de una caja, para hacer mas fácil la movilidad.  
+                            </p>
+                            <h4>Unidades: 22</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores6.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo red heart</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$30.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="47">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores6.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo read heart<br><span>Naturales</span></h2>
+                            <h4>$30.00</h4>
+                            <p>Las rosas rojas siempre son excelente para hacer diversas combinaciones o incluso para formar figuras y este 
+                                caso no es la excepción. Traemos un ramo de rosas en forma de corazón, con 25 rosas, colocado en una base metálica.
+                            </p>
+                            <h4>Unidades: 25</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/flores7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Mini ramo rosas</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$12.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="48">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Mini ramo rosas<br><span>Naturales</span></h2>
+                            <h4>$12.00</h4>
+                            <p>Si quieres dar un pequeño detalle de flores, este ramo de rosas es perfecto para ti. Compuesto por alrededor de 8 rosas,
+                                envuelto en papel decorativo y a un económico precio. 
+                            </p>
+                            <h4>Unidades: 8</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores8.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo de girasoles</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$10.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="49">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores8.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo de girasoles<br><span>Naturales</span></h2>
+                            <h4>$10.50</h4>
+                            <p>Que buen regalo para decirle a tu pareja cuanto la admiras, con un hermoso arreglo de girasoles. Compuesto por 5 girasoles cada uno,
+                                contiene una base circular firme, perfecto para colocar sobre tu mesa de trabajo. 
+                            </p>
+                            <h4>Unidades: 5</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores9.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo Delicate</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$10.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="50">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores9.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo delicate<br><span>Naturales</span></h2>
+                            <h4>$10.00</h4>
+                            <p>Pequeño arreglo floral, compuesto por una variedad de flores de diferentes colores, con un centro de montacrisemo blanco y 
+                                sostenido de una base circular de marmol. Perfecto para regalo de aniversario, mes de celebración y mucho mas.
+                            </p>
+                            <h4>Unidades: 5</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/flores10.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ramo pink gerbera</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$27.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="51">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/flores10.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ramo pink gerbera<br><span>Naturales</span></h2>
+                            <h4>$27.00</h4>
+                            <p>Específicamente, las margaritas Gerbera de color rosa suave provocan admiración y simpatía, haciendo de ellas 
+                                flores que se suelen dar como acto de amistad o regalos para que una persona o tu propia pareja mejore de salud.
+                                Compuesto por 22 flores cada ramo, con papel decorativo color rosa, perfecto para reanimar a tu pareja en la salud.</p>
+                            <h4>Unidades: 22</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+ 
+<!--CHOCOLATES-->
+        <div class="contenedor-subtitulos">
+            <h3 id="chocolates" class="subtitulos">Chocolates</h3>
+        </div>
+
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/chocolates1.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Heart bombones</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$35.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="52">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Heart bombones<br><span>Shaw's</span></h2>
+                            <h4>$35.00</h4>
+                            <p>Llevate una hermosa caja de chocolate en forma de corazón por un precio accesible. Cada chocolate esta relleno
+                                de diferente sabores, entre ellos: menta, capuchino, dulce de leche y nutella. 
+                            </p>
+                            <h4>Unidades: 15</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/chocolates2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Bombones de chocolate</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$30.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="53">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Bombones de chocolates<br><span>Shaw's</span></h2>
+                            <h4>$30.00</h4>
+                            <p>Chocolate en forma circular, rellenos de diferentes sabores, perfecto para alegrar el día de manera dulce. 
+                            </p>
+                            <h4>Unidades: 15</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="productogrande" src="..//img/chocolates3.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Chocolate Fever</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$18.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="54">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Chocolate Ferver<br><span>Ferver</span></h2>
+                            <h4>$18.00</h4>
+                            <p>Si quieres que tu pareja tenga un dulce embriagar, que mejor que estos chocolates rellenos de licores. La caja 
+                                contiene 8 unidades de diferentes formas y sabores. 
+                            </p>
+                            <h4>Unidades: 8</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/chocolates4.png" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Love for Chocolate</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$25.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="55">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates4.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Love for chocolate<br><span>Love</span></h2>
+                            <h4>$25.00</h4>
+                            <p>Cada chocolate esta compuesto por un sabor diferente, variado entre ellos algunos de licor para tener una colección completa de gustos.
+                            </p>
+                            <h4>Unidades: 15</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/chocolates5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ferrero Rocher</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$18.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="56">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ferrero Rocher<br><span>Ferrero Rocher</span></h2>
+                            <h4>$18.00</h4>
+                            <p>Si tu pareja le gustan los refinados gustos, contamos con la selección de Ferrero Rocher. Una marca de chocolates
+                                tan exquisitos que te dejarán con ganas de más. 
+                            </p>
+                            <h4>Unidades: 6</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/chocolates6.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Ferrero Rocher</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$55.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="57">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates6.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Ferrero Rocher<br><span>Ferrero Rocher</span></h2>
+                            <h4>$55.00</h4>
+                            <p>Chocolates formados por una capa de barquillo rellenos con pasta de cacao y allevanas, recubierta por una capa de chocolate con avellanas trituradas y una avellana entera en el interior, 
+                                envueltos en papel metalizado y colocados individualmente sobre un molde de papel engrasado.</p>
+                            <h4>Unidades: 36</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/chocolates7.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Chocolate truffles</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$11.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="58">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/chocolates7.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Chocolate truffles<br><span>Truffles</span></h2>
+                            <h4>$11.50</h4>
+                            <p>Chocolates a base de la fruta truffles, estan cubiertas por una fina capa de chocolate claro y oscuro. Disfruta de esta selección
+                                para subir los ánimos de tu pareja. 
+                            </p>
+                            <h4>Unidades: 4</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!--ACCESORIOS-->
+        <div class="contenedor-subtitulos">
+            <h3 id="accesorios" class="subtitulos">Accesorios</h3>
+        </div>
+        
+        <div class="col-12 col-t-12">
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/accesorio1.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Pulseras King and Queen</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$6.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="59">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/accesorio1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Pulseras King and Queen<br><span></span></h2>
+                            <h4>$6.50</h4>
+                            <p>Pulsera del amor. Un hombre quiere ser el primer amor de su amada. Una mujer quiere que su amado sea su último amor. 
+                                Es tu momento de dedicar cuanto amas a esa persona, es momento en que tu estes totalmente convencido(a) de que si quieres estar con ella o él . Tienda EVIGANES te ayudara a vivir y sentir esas experiencia</p>
+                            <h4>Material: Metal</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/accesorios2.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Relojes Him&Her</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$60.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="60">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/accesorios2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Relojes Him&Her<br><span></span></h2>
+                            <h4>$60.00</h4>
+                            <p>Quieres hacer un lindo conjunto con tu pareja, pero al mismo tiempo lucir prendas elegantes. Los relojes Him&Her son una gran elección.
+                                Tenemos de diferentes colores entre ellos: rojo, negro y blanco siendo estos unisex. 
+                            </p>
+                            <h4>Material: Cuero</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/accesorios3.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Collares MyHeart</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.50</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="61">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/accesorios3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Collares MyHeart<br><span></span></h2>
+                            <h4>$8.50</h4>
+                            <p>Este par de collares para promesas eternas tiene un diseño de colgante magnético. Una vez que están bien colocados, 
+                                se conectan entre sí y representan la intimidad entre usted y su pareja. Estas piezas de joyería significativas para parejas son 
+                                adecuadas para diferentes ocasiones y son muy adecuadas como regalos.
+                            </p>
+                            <h4>Material: Cuerda y alambre de cobre, corazones magnéticos</h4>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/accesorios4.jpeg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Pulseras Me&You</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$8.00</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="62">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/accesorios4.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Pulseras Me&You<br><span></span></h2>
+                            <h4>$8.00</h4>
+                            <p>Estas pulseras de corona real son perfectas para mostrar a todos que eres su reina / su rey. Te hará sentir que lo tienes 
+                                cerca a pesar de las distancia que puedan tener, las pulseras son símbolos de su amor juntos. 
+                            </p>
+                            <h4>Material: Metal</h4>
+                        </div>
+                </div>
+            </div>
+
+            <div class="contenedor-prod card col-3 col-t-6">
+                <img class="producto" src="..//img/accesorios5.jpg" alt="">
+                <div class="imag_overlay">
+                    <h3 class="img_titulo">Anillos Always</h3>
+                    <p class="img_descripcion">
+                        Precio: <span>$7.80</span>
+                    </p>
+                </div>
+                <div>
+                    <button class="botondetalles agregar-carrito" id="63">A carrito</button>
+                    <button class="verdetalles">Detalles</button>
+                </div>
+            </div>
+
+            <!--modal-->
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#" class="bcerrarpopup">x</a>
+                        <div class="producto-img">
+                            <img src="..//img/accesorios5.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Anillos Always<br><span></span></h2>
+                            <h4>$7.80</h4>
+                            <p>Perfecto conjunto de anillos magnéticos, combinados para dar la respuesta que siempre anhelas decir frente a tu ser amado.
+                                Regalo hecho para aniversarios, bodas, día de San Valentín, etc.
+                            </p>
+                            <h4>Material: Acero inoxidable</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="row col-12">
+        <div class="col-4 col-t-6">
+            <a><u>DIRECCIÓN</u></a>
+            <label>Metrocentro, Sonsonate, Sonsonate.
+            </label>
+            <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank"><img height="150px" src="..//img/direccion.png" alt=""></a>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>
+    <script src="..//js/carrito.js"></script>
+</body>
+</html>

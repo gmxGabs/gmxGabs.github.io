@@ -1,0 +1,19 @@
+@font-face{
+    font-family: titulos;
+    src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: subtitulos;
+    src: url(../fonts/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+
+@font-face {
+    font-family: fuentemenu;
+    src: url(../fonts/Champagne\ &\ Limousines\ Bold.ttf);
+}
+
+@font-face {
+    font-family: parrafos;
+    src: url(../fonts/Champagne\ &\ Limousines.ttf);
+}

@@ -1,0 +1,576 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.barramenu{
+    display: block;
+    width: 100%;
+    background: rgb(226, 97, 168);
+}
+
+.barramenu .bt-menu{
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.barramenu span{
+    float: right;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+header nav{
+    position: absolute;
+    width: 90%;
+    z-index: 1000;
+    background-color: rgb(226, 97, 168);
+    right: 100%;
+}
+
+header nav ul, footer ul{
+    list-style: none;
+}
+
+header nav ul li{
+    border-bottom: 1px solid white;
+}
+
+header nav ul li:hover{
+    background: rgb(155, 39, 155);
+}
+
+header nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-family: fuentemenu;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1500;
+    background-color: white;
+    padding: 20px;
+    min-height: 40px;
+    min-width: 300px;
+}
+
+#vaciarcarrito{
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(26, 23, 23);
+    margin: 10px;
+    border: 2px solid rgb(78, 157, 184);
+}
+
+#vaciarcarrito:hover{
+    background-color: rgb(116, 213, 245);
+}
+
+.tableth{
+    background-color: lightblue;
+    font-family: fuentemenu;
+    text-align: center;
+    padding: 8px;
+}
+
+.borrar-item{
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+table td{
+    text-align: center;
+}
+
+header nav ul li a span{
+    margin-right:10px;
+}
+
+header nav ul li:hover .submenu2{
+    display: none;
+}
+
+header nav ul li .submenu2{
+    display: none;
+    position: relative;
+    background: rgb(231, 149, 194);
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul li .submenu2 li{
+    display: block;   
+    border-bottom: 1px solid white; 
+}
+
+header nav ul li .caret{
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    margin-right: 0px;
+    float: right;
+}
+
+.titulos{
+    font-family: titulos;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-subtitulos{
+    display: flex;
+    width: 100%;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+.subtitulos{
+    font-size: 25px;
+    font-family: subtitulos;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(92, 92, 92, 0.2);
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-prod{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+}
+
+.botondetalles{
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    margin: 2px;
+    font-family: fuentemenu;
+    background-color: rgb(185, 226, 185);
+}
+
+.botondetalles:hover{
+    background-color: rgb(129, 172, 129);
+}
+
+.verdetalles{
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    margin: 2px;
+    font-family: fuentemenu;
+    background-color: lightblue;
+}
+
+.verdetalles:hover{
+    background-color: rgb(96, 192, 224);
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: rgb(171, 217, 233, 0.4);
+}
+
+#cumple{
+    height: 200px;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+    font-family: parrafos;
+    font-size: 18px;
+}
+
+.producto{
+    display: block;
+    height: 150px;
+    padding-left: 30px;
+}
+
+.productopequeño{
+    display: block;
+    height: 150px;
+    padding-left: 55px;
+}
+
+.productogrande{
+    display: block;
+    height: 150px;
+}
+
+.imag_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 77%;
+    margin-left: 50px;
+    margin-top: 8px;
+    background: rgb(0,0,0,0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imag_overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imag_overlay:hover{
+    opacity: 1;
+}
+
+.imag_overlay:hover > *{
+    transform: translateY(0);
+}
+
+.img_titulo, .img_descripcion{
+    font-family: fuentemenu;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*popup*/
+.popup-view{
+    z-index: 999;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display :none;
+    transition: 0.5s;
+}
+
+.popup-view .activar{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 375px;
+    margin: 15%;
+}
+
+.popup-card .producto-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+    background: white;
+}
+
+.popup-card .producto-img img{
+    position: relative;
+    width: 172px;
+}
+
+.popup-card .info{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.popup-card .info h2{
+    font-size: 25px;
+    font-family: fuentemenu;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.popup-card .info h2 span{
+    font-size: 15px;
+    font-family: fuentemenu;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.info h4{
+    margin: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-family: subtitulos;
+}
+
+.popup-card .info p{
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: left;
+    font-family: parrafos;
+}
+
+.popup-card .bcerrarpopup{  
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.popup-card .bcerrarpopup:hover{
+    color: black;
+}
+
+@media (max-width: 768px){
+    .popup-card{
+        flex-direction: column;
+        width: 70%;
+        margin: 15%;
+        margin-top: 25%;
+    }
+
+    .popup-card .producto-img{
+        width: 100%;
+        height: 200px;
+        transform: translateY(0); 
+        border-top-left-radius: 10px ;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .popup-card .producto-img img{
+        left: initial;
+        max-width: 120px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .popup-card .info{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .popup-card .info h2{
+        margin: 20px 5px 5px 5px;
+        font-size: 20px;
+    }
+
+    .popup-card .info h3{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .popup-card .info p{
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .popup-card .bcerrarpopup{
+        z-index: 4;
+        top: 0;
+    }
+}
+
+footer{
+    background-color: rgb(226, 97, 168);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.boton{
+    background-color: gainsboro;
+    width: 20%;
+    justify-content: center;
+}
+
+footer hr{
+    color: white;
+}
+
+footer a, label{ 
+    text-align: center;
+    font-family: fuentemenu;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+footer div .caret{
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+}
+
+.contfooter{
+    display: block;
+    padding-top:70px;
+}
+
+@media only screen and (min-width: 600px){ /* TABLET */
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+
+    .titulos{
+        font-size: 50px;
+    }
+    
+    .subtitulos{
+        font-size: 35px;
+    }
+
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        background-color: rgb(171, 217, 233, 0.4);
+    }
+
+    .imag_overlay{
+        margin-left: 30px;
+    }
+}
+@media only screen and (min-width: 900px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    body{
+        padding-top: 0;
+    }
+
+    .barramenu{
+        display: none;
+    }
+    
+    header{
+        width: 100%;
+        background-color: rgb(226, 97, 168);
+    }
+    
+    header div a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    header nav{
+        background-color: rgb(226, 97, 168);
+        position: static;
+        max-width: 1000px;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    header nav ul li{
+        border-bottom: 0;
+        display:inline-block;
+        position: relative;
+    }
+
+    header nav ul li .submenu2{
+        width: 100%;
+        position:absolute;
+    }
+
+    .titulos{
+        font-size: 70px;
+    }
+
+    .subtitulos{
+        font-size: 35px;
+    }
+
+    .imag_overlay{
+        margin-left: 32px;
+    }
+}

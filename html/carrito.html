@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    <link rel="stylesheet" href="..//fonts/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="..//css/carrito.css">  
+</head>
+<body>
+    <header class="fondoheader">
+        <div>
+            <img class="logo" src="../img/ganes.png" alt="">
+        </div> 
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="botones" href="..//index.html"><span class="caret icon-home iconos"></span>Volver a inicio</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedorprincipal col-12 col-t-12">
+        <div id="carrito" class="contenedorProductos col-5 col-t-8">
+            <table id="listacarrito">
+                <thead>
+                    <tr>
+                        <th class="tableth">Imagen</th>
+                        <th class="tableth">Artículo</th>
+                        <th class="tableth">Cantidad</th>
+                        <th class="tableth">Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="contenedorform col-5 col-t-8">
+            <form id="formularioPago" onsubmit="agradecimiento()">
+                <h3 for="">Datos tarjeta de Crédito o Débito</h3><br>
+                <label>Complete los datos a continuación</label><br><br>
+                <label for="nombreCliente">Nombre del titular de la tarjeta</label><br>
+                <input required id="nombreCliente" type="text" placeholder="Como aparece en la tarjeta"><br><br>
+
+                <label for="numeroTarjeta">Número de tarjeta</label><br>
+                <input required id="numeroTarjeta" type="number" placeholder="Digite el número de tarjeta, sin guiones ni espacios"><br><br>
+                
+                <div class="contenedorinfo">
+                    <div>
+                        <label for="numeroTarjeta">Mes</label><br>
+                        <input required id="mes" class="inputpequeño" type="number" placeholder="MM"><br><br>
+                    </div>
+                    
+                    <div>
+                        <label for="numeroTarjeta">Año</label><br>
+                        <input required id="año" class="inputpequeño" type="number" placeholder="YYYY"><br><br>
+                    </div>
+                </div>
+
+                <div class="contenedorinfo">
+                    <div>
+                        <label for="numeroTarjeta">Código de seguridad (CVV)</label><br>
+                        <input required id="cvv" class="inputpequeño" type="text" placeholder="CVV (3 dígitos)"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="numeroTarjeta">Ver reverso</label><br>
+                        <img class="imgtarjeta" src="..//img/reversotarjeta.png" alt=""><br>
+                    </div>
+                </div>
+
+                    <label for="numeroTarjeta">Tarjetas aceptadas</label><br>
+                    <img class="imgtarjeta" src="..//img/pagotarjetas.png" alt=""><br>
+
+                <div class="center"><button id="botonpagar" type="submit">Pagar Cuenta</button></div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="row col-12">
+        <div class="col-4 col-t-6">
+            <a><u>DIRECCIÓN</u></a>
+            <label>Metrocentro, Sonsonate, Sonsonate.
+            </label>
+            <a href="https://www.google.com/maps/place/Metrocentro+Sonsonate/@13.7119124,-89.725623,15z/data=!4m5!3m4!1s0x0:0xbd54d4835b08db6!8m2!3d13.7119239!4d-89.7256062" target="_blank"><img height="150px" src="..//img/direccion.png" alt=""></a>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>CONTACTOS PARA NEGOCIOS</u></label>  
+            <label><span class="caret icon-mail2"></span>E-mail: eviganes@gmail.com</label>
+            <label><span class="caret icon-whatsapp"></span>Whatsapp: +(503) 76543210</label>
+        </div>
+
+        <div class="col-4 col-t-6 contfooter">
+            <label><u>NUESTRAS REDES</u></label>
+            <a href="https://es-la.facebook.com/" target="_blank"><span class="caret icon-facebook"></span>Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><span class="caret icon-instagram"></span>Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><span class="caret icon-twitter"></span>Twitter</a>
+        </div>
+
+        <div class="col-12">
+            <hr>
+            <br>
+            <p>Universidad de Sonsonate &copy; Examen final</p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        function agradecimiento(){
+            alert("Tu cuenta ha sido cancelada. Muchas gracias por preferirnos.");
+        }
+    </script>
+    <script src="..//js/carrito.js"></script>
+</body>
+</html>
