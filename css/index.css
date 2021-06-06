@@ -124,12 +124,14 @@ header nav ul li .submenu2{
     background: rgb(231, 149, 194);
     position: relative;
     width: 100%;
+    font-family: fuentemenu;
     z-index: 1000;
 }
 
 header nav ul li .submenu2 li{
     display: block;   
     overflow: hidden;
+    font-family: fuentemenu;
     border-bottom: 1px solid white;
     width: 100%;
 }
