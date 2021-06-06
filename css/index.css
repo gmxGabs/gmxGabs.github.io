@@ -131,7 +131,6 @@ header nav ul li .submenu2{
 header nav ul li .submenu2 li{
     display: block;   
     overflow: hidden;
-    font-family: fuentemenu;
     border-bottom: 1px solid white;
     width: 100%;
 }
