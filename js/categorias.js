@@ -18,7 +18,8 @@ function main(){
         }
     });
 
-    $(".submenu").click(function(){
+    $(".submenu").click(function(event){
+        event.preventDefault();
         $(this).children(".submenu2").slideToggle();
     });
 
@@ -26,7 +27,7 @@ function main(){
     let popupBtns = document.querySelectorAll('.verdetalles');
     let closeBtns = document.querySelectorAll('.bcerrarpopup');
             
-    //javascript for quick view button
+    //javascript para abrir el boton
         let popup = function(popupClick){
                    
             popupViews[popupClick].style = "display: block; transition: 1s";
@@ -39,7 +40,7 @@ function main(){
             });
         });
         
-        //javascript for close button
+        //javascript para cerrar modal
             closeBtns.forEach((closeBtn) => {
               closeBtn.addEventListener("click", () => {
                 popupViews.forEach((popupView) => {
